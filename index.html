@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="nav-brand" href="#">My Portfolio</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#app">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Profile Section -->
+    <section id="profile" class="section-gradient">
+        <div class="profile-container">
+            <div class="profile-image-container">
+                <div class="glow-ring">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFas-oFVzcVEw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724077587757?e=1738800000&v=beta&t=6GQS446tp6d4CYgYQXaMQ8FhsNCmMXvRLvFMU3au59g" 
+                         alt="Profile Image" 
+                         class="profile-image">
+                </div>
+            </div>
+            
+            <div class="profile-details">
+                <h2>Ranga Vihasith</h2>
+                <p class="description">
+                    Passionate tech enthusiast with a strong focus on 
+                    <span class="highlight">innovation</span> and 
+                    <span class="highlight">leadership</span> in the digital landscape.
+                </p>
+                <div class="dynamic-text-wrapper">
+                    <span class="i-am">I am</span>
+                    <br>
+                    <div class="dynamic-text-container">
+                        <span id="dynamic-text" class="dynamic-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                </div>
+                
+                <!-- Social Media Icons -->
+                <div class="social-icons-container">
+                    <div class="social-icons">
+                        <a href="https://leetcode.com/u/vihasith_/" target="_blank" class="social-icon leetcode" title="LeetCode" style="text-decoration:none;">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span class="icon-label">LeetCode</span>
+                        </a>
+                        <a href="mailto:vihasithsr@gmail.com" target="_blank" class="social-icon email" title="Mail" style="text-decoration:none;">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span class="icon-label">Email</span>
+                        </a>
+                        <a href="https://github.com/Vihasith17" target="_blank" class="social-icon github" title="GitHub" style="text-decoration:none;">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span class="icon-label">GitHub</span>
+                        </a>
+                        <a href="https://www.credly.com/users/vihasith_ranga" target="_blank" class="social-icon credly" title="Credly" style="text-decoration:none;">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span class="icon-label">Credly</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/vihasith-ranga/" target="_blank" class="social-icon linkedin" title="LinkedIn" style="text-decoration:none;">
+                            <div class="icon-wrapper">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <span class="icon-label">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-gradient">
+        <h2 class="section-title">Projects</h2>
+        <div class="timeline">
+          <!-- Project 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-image">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240403150314/graph-data-structure.webp" alt="Graphs">
+              </div>
+              <div class="timeline-info">
+                <h3>HOP Total Roman Domination Using ABC</h3>
+                <p>HTRD(hop total roman domination)  problem using evolutionary algorithms, developed computational strategies, and conducted research on the problem.Designed and implemented algorithms to solve the HTRD problem.Analyzed performance using computational techniques and graph theory.
+				</p>
+				<div class="timeline-tech">
+                  <span>Python</span>
+                  <span>NetworkX</span>
+                  <span>Matplotlib</span>
+                </div>
+                <a href="https://github.com/vihasith25/HTRD.git" class="timeline-btn" target="_blank">
+                    <i class="fab fa-github"></i> View Project</a>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Project 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-image">
+                <img 
+				src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google-Analytics-4-Blog-Post-Hea.width-1200.format-webp_IVibNTT.webp" alt="Data Analysis Project">
+              
+			  </div>
+              <div class="timeline-info">
+                <h3>CapitalVision Analytics</h3>
+                <p>
+				The provided code reads multiple Excel files from a ZIP archive, combines their data into a single DataFrame, and shortlists companies based on their "PAIDUP CAPITAL" and "AUTHORIZED CAPITAL." The shortlisted data is saved to a CSV file, allowing easy analysis of top-performing companies.
+				</p>
+                
+				<div class="timeline-tech">
+                    
+                   <span>Python</span>
+                  <span>Power BI</span>
+                  <span>Google colab</span>
+				  <span>Excel</span>
+                  
+                  
+                </div>
+                <a href="https://github.com/vihasith25/Analytics.git" class="timeline-btn" target="_blank">
+                    <i class="fab fa-github"></i> View Project
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="cyberpunk-background"></div>
+    
+      <section class="internships-section" id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="internships-container">
+		
+		            <!--HCDS -->
+            <div class="internship-card">
+                <div class="internship-header">
+                    <div class="company-logo">
+                        <img src="https://media.licdn.com/dms/image/v2/D560BAQFhNLxS9cpRbw/company-logo_200_200/company-logo_200_200/0/1734603785343/hcdstech_logo?e=2147483647&v=beta&t=HQvRaUGfAYV0A2jlmx7vlCswvhvFpLM6XmdFvvIWRtk" alt="Web Development Company">
+                    </div>
+                    <div class="company-info">
+                        <h3>Data Analytics Intern </h3>
+                        <h4>HCDS TECHNOLOGY</h4>
+                        <p class="duration">October 2024 - Present</p>
+                    </div>
+                </div>
+                <div class="internship-content">
+                    <ul class="achievements">
+					<li>Worked on data analytics projects focusing on People, Market, and Product Analytics using Power BI, Excel, and Python.</li>
+					<li>Gained experience in engineering problem-solving and consulting, leveraging data-driven insights for business solutions.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Power BI</span>
+                        <span>Excel</span>
+                    </div>
+                </div>
+            </div>
+		
+            <!-- NITW -->
+            <div class="internship-card">
+                <div class="internship-header">
+                    <div class="company-logo">
+                        <img src="https://www.nitw.ac.in/stuti/images/Picture2.png" alt="Tech Company">
+                    </div>
+                    <div class="company-info">
+                        <h3> Data Structures and Algorithms Intern</h3>
+                        <h4> NIT, Warangal</h4>
+                        <p class="duration">June 2024 - July 2024</p>
+                    </div>
+                </div>
+                <div class="internship-content">
+                    <ul class="achievements">
+						<li>Worked on the Hop Total Roman Domination (HTRD) problem using evolutionary algorithms.</li>
+						<li>Developed algorithms and strategies for the HTRD problem.</li>                    
+					</ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Data Structure and Algorithms</span>
+                        <span>Graphs</span>
+                    </div>
+                </div>
+            </div>
+			
+			<!-- Data Science Internship -->
+            <div class="internship-card">
+                <div class="internship-header">
+                    <div class="company-logo">
+                        <img src="https://media.licdn.com/dms/image/v2/D560BAQHrcKV5J-UYOw/company-logo_200_200/company-logo_200_200/0/1683038260537/segura_invendors_logo?e=2147483647&v=beta&t=Pn-jAvyzTW82mdIwQMurDaD7ToSvpQ11k5M_R7t48Z4" alt="Tech Company">
+                    </div>
+                    <div class="company-info">
+                        <h3> Python Developer Intern</h3>
+                        <h4>Segura Invendors</h4>
+                        <p class="duration">May 2023 - June 2023</p>
+                    </div>
+                </div>
+                <div class="internship-content">
+                    <ul class="achievements">
+						<li>As a Python Developer, I worked on designing, developing, and debugging efficient Python-based solutions.</li>
+						<li>Leveraged libraries and frameworks to build scalable applications, automate tasks, and perform data analysis while ensuring code quality and performance optimization.</li>                
+					</ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Visual Studio</span>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Skills Section -->
+     <div id="skills">
+    <section class="skills-section">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-container">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-python" style="color: #fff;"></i>
+                        </div>
+                        <h4>Python</h4>
+                    </div>
+					    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-c" style="color: #fff;"></i>
+                        </div>
+                        <h4>C</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-java" style="color: #fff;"></i>
+                        </div>
+                        <h4>Java</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development -->
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-html5" style="color: #fff;"></i>
+                        </div>
+                        <h4>HTML5</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-css3-alt" style="color: #fff;"></i>
+                        </div>
+                        <h4>CSS3</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-bootstrap" style="color: #fff;"></i>
+                        </div>
+                        <h4>Bootstrap</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-react" style="color: #fff;"></i>
+                        </div>
+                        <h4>React</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fa-solid fa-pepper-hot" style="color: #fff;"></i>
+                        </div>
+                        <h4>Flask</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Data Science -->
+            <div class="skill-category">
+                <h3>Data Science</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fas fa-brain" style="color: #fff;"></i>
+                        </div>
+                        <h4>Machine Learning</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fas fa-chart-line" style="color: #fff;"></i>
+                        </div>
+                        <h4>Data Analytics</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Database & Version Control -->
+            <div class="skill-category">
+                <h3>Database & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fas fa-database" style="color: #fff;"></i>
+                        </div>
+                        <h4>MySQL</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fas fa-table" style="color: #fff;"> </i>
+                        </div>
+                        <h4>SQL</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-git-alt" style="color: #fff;"></i>
+                        </div>
+                        <h4>Git</h4>
+                    </div>
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-github" style="color: #fff;"></i>
+                        </div>
+                        <h4>GitHub</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Cloud & Security -->
+            <div class="skill-category">
+                <h3>Cloud & Security</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="100">
+                        <div class="skill-progress">
+                            <div class="progress-ring"></div>
+                            <i class="fab fa-aws" style="color: #fff;"></i>
+                        </div>
+                        <h4>AWS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div id="app"></div>
+    <script src="index.js"></script>
+</body>
+</html>
